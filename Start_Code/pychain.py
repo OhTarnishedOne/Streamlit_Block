@@ -194,8 +194,12 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     #data=input data
-    new_block = Block(record=Record(sender, receiver, amount),
-    creator_id=42,prev_hash=prev_block_hash)
+new_block = Block(
+    #data=input_data,
+record=Record(sender, receiver, amount),
+creator_id=42, prev_hash=prev_block_hash)
+pychain.add_block(new_block)
+st.balloons()
    
 ################################################################################
 # Streamlit Code (continues)
