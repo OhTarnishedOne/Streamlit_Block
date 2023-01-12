@@ -183,7 +183,7 @@ receiver = st.text_input("Receiver ID")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-amount = st.amount_input("Amount ID")
+amount = st.text_input("Amount ID")
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
